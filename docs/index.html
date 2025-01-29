@@ -38,7 +38,7 @@
             color: #ffffff;
             border-color: #75e0c7;
         }
-        .faq-table, .website-table {
+        .faq-table, .website-table, .email-table {
             margin: 30px auto;
             width: 90%;
             max-width: 800px;
@@ -47,14 +47,14 @@
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .faq-table th, .website-table th {
+        .faq-table th, .website-table th, .email-table th {
             background-color: #a99bff;
             color: #fff;
             padding: 15px;
             font-size: 1.2em;
             text-align: center;
         }
-        .faq-table td, .website-table td {
+        .faq-table td, .website-table td, .email-table td {
             padding: 15px;
             border-bottom: 1px solid #ddd;
             cursor: pointer;
@@ -78,10 +78,6 @@
         .clicked {
             background-color: red;
         }
-        .email-table {
-            margin: 0 auto;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
@@ -93,9 +89,14 @@
 
     <p>With your new domain, you’ll get access to professional email addresses like:</p>
     <table class="email-table">
-        <tr><td>promotions@eyecharlene.com</td></tr>
-        <tr><td>collabs@eyecharlene.com</td></tr>
-        <tr><td>support@eyecharlene.com</td></tr>
+        <thead>
+            <tr><th>Email Addresses</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>promotions@eyecharlene.com</td></tr>
+            <tr><td>collabs@eyecharlene.com</td></tr>
+            <tr><td>support@eyecharlene.com</td></tr>
+        </tbody>
     </table>
 
     <div style="height: 20px;"></div>
